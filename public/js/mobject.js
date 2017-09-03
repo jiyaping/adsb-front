@@ -409,8 +409,8 @@ function initSVGMap(){
 var Datagram = function(arr){
 	var obj = new Object();
 
-	obj.dgtype 				= 	arr[0];  //消息类型
-	obj.transmission_type 	= 	arr[1];  //传输类型
+	obj.dgtype 			= 	arr[0];  //消息类型
+	obj.transmission_type 	        = 	arr[1];  //传输类型
 	obj.sessionid 			= 	arr[2];  //自动生成session id,默认为111
 	obj.aircraftid 			= 	arr[3];  //自动生成的飞机号,默认为11111
 	obj.hexident 			= 	arr[4];  //16bit标识
@@ -422,14 +422,14 @@ var Datagram = function(arr){
 	obj.callsign 			= 	arr[10]; //呼号,默认三字码eg: CSZ9005
 	obj.altitute 			= 	arr[11]; //高度ft
 	obj.groundspeed 		= 	arr[12]; //地速kts
-	obj.track 				= 	arr[13]; //航向
-	obj.lat 				= 	arr[15]; //经度
-	obj.long 				= 	arr[14]; //纬度
+	obj.track 			= 	arr[13]; //航向
+	obj.lat 			= 	arr[15]; //经度
+	obj.long 			= 	arr[14]; //纬度
 	obj.vertical_rate 		= 	arr[16]; //垂直速度
-	obj.squawk 				= 	arr[17]; //应答机编码? 
-	obj.alert 				= 	arr[18]; //
+	obj.squawk 			= 	arr[17]; //应答机编码? 
+	obj.alert 			= 	arr[18]; //
 	obj.emergency 			= 	arr[19];
-	obj.spi 				= 	arr[20];
+	obj.spi 			= 	arr[20];
 	obj.isonground 			= 	arr[21];
 
 	return obj;
